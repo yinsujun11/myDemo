@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/list_item_bt"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp" />
+
+    <Button
+        android:id="@+id/list_item_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv"
+        android:layout_alignBottom="@+id/tv"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:text="delete" />
+
+</RelativeLayout>

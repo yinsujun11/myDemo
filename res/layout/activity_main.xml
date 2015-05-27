@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/MyTheme"
+    tools:context=".MainActivity" >
+
+    <!--
+         <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:clickable="true" />
+    -->
+
+    <FrameLayout
+        android:id="@+id/activity_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_location"
+            style="@style/DefultTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/orangered"
+            android:gravity="center" />
+
+    <ProgressBar
+        android:id="@+id/activity_head_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/default_margin_right"
+        android:indeterminateDrawable="@drawable/progress_dialog" 
+        
+         android:layout_centerInParent="true"  
+    style="?android:attr/progressBarStyleSmall"/>
+
+    <ImageView
+        android:id="@+id/activity_head_iv_personal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/personal" />
+    
+    </FrameLayout>
+
+    <com.mydemo.view.ScrollImage
+        android:id="@+id/simage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+         />
+
+    <Button
+        android:id="@+id/bt_custom_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/button_bg_green"
+        android:text="自定义对话框"
+        android:visibility="gone"
+        android:textColor="@color/blue"
+        android:layout_marginLeft="@dimen/default_margin_left"
+        android:layout_marginRight="@dimen/default_margin_right"
+        />
+<ListView 
+    android:id="@+id/lv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    >
+    
+</ListView>
+</LinearLayout>

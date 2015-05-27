@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_custom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/default_margin_buttom" >
+	<RelativeLayout 
+	    android:id="@+id/dialog_custom_rela"
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/dialog_custom_iv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/default_margin_left"
+        android:src="@drawable/smile" />
+    <TextView
+        android:id="@+id/dialog_custom_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/dialog_custom_iv"
+        android:layout_marginLeft="@dimen/default_margin_left"
+        android:text="@string/my_dialog_alert"
+        android:textColor="@color/lightgreen" />
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/dialog_custom_bt_sure"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/dialog_custom_rela"
+        android:background="@drawable/button_bg_orange"
+        android:text="确定"
+        android:layout_marginLeft="@dimen/default_margin_left"
+        android:layout_marginRight="@dimen/default_margin_right"
+        android:textColor="@color/white" />
+	
+</RelativeLayout>
